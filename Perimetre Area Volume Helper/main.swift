@@ -9,23 +9,7 @@ import Foundation
 
 //MARK: Functions
 
-// Summary for the function.
-/// Finds the area of a rectangle
-/// - Parameter length: length of rectangle
-/// - Parameter width: width of rectangle
-/// - Returns: area of the rectangle
-func areaOfRectangle(length: Double, width: Double) -> Double {
-    
-    return length * width
-    
-}
-
-/// Finds the area of a circle.
-/// - Parameter radius: The distance from the middle of the circle to the edge in a straight line.
-/// - Returns: Area of the circle.
-func areaOfCircle(radius: Double) -> Double {
-    return Double.pi * pow(radius, 2.0)
-}
+// REMEMBER TO ADD SUMMARIES TO FUNCTIONS.
 
 // Area of a Cylinder function
 
@@ -39,15 +23,13 @@ func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) ->
 
     // Create variable that holds the volume of the cylinder.
     var volume = 0.0
-    // Create a variable to hold the value of the radius.
-    var radius = 0.0
     // Check if the user inputted a diamatre or radius.
     if r != 0.0 {
-        radius = r
+        r = r
     } else {
-        radius = d / 2
+        r = d / 2
     }
-    volume = (radius * radius) * Double.pi * h
+    volume = (r * r) * Double.pi * h
     return volume
 }
 
@@ -63,6 +45,17 @@ func volumeOfSphere(radius r: Double) -> Double {
     return volume
 }
 
+func volumeOfCone(radius r: Double, height h: Double) -> Double {
+    
+    // Create a variable to hold the volume.
+    var volume = 0.0
+    
+    // Calculate the volume.
+    volume = (r * r * Double.pi * h) / 3.0
+    
+    // Return the volume.
+    return volume
+}
 
 // MARK: Input
 

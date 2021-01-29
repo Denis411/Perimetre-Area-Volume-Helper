@@ -35,34 +35,38 @@ func areaOfCircle(radius: Double) -> Double {
 ///   - d: The straight line length from one edge of the circle to the opposite.  Twice the radius
 ///   - h: The height of the cylinder.
 /// - Returns: Volume of a cylinder
-func areaOfCylinder(radius r: Double, diametre d: Double, height h: Double) -> Double {
+func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) -> Double {
 
     // Create variable that holds the volume of the cylinder.
     var volume = 0.0
-    // Create a variable to hold the value of the diametre (radius * 2)
-    var diametre = 0.0
+    // Create a variable to hold the value of the radius.
+    var radius = 0.0
     // Check if the user inputted a diamatre or radius.
     if r != 0.0 {
-        diametre = r * 2
+        radius = r
     } else {
-        diametre = d
+        radius = d / 2
     }
-    volume = diametre * h
+    volume = (radius * radius) * Double.pi * h
     return volume
 }
+
+//func volumeOfSphere(<#parameters#>) -> <#return type#> {
+//    <#function body#>
+//}
+
+
 // MARK: Input
 
 // Labelling the uses of the tool.
 print("This is a volume helper for 3D shapes.")
 print("======================================")
 
-let givenLength = 10.0     // Set to a double using "type inference:" (Swift guesses)
-let givenWidth: Double = 2  // Set to double using "type annotation" (Telling Swift what to do)
 
 
 // MARK: Process
 
-let outputOfCylinder = areaOfCylinder(radius: 0, diametre: 10, height: 2)
+let outputOfCylinder = volumeOfCylinder(radius: 0, diametre: 5, height: 2)
 
 // MARK: Output
 

@@ -51,9 +51,17 @@ func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) ->
     return volume
 }
 
-//func volumeOfSphere(<#parameters#>) -> <#return type#> {
-//    <#function body#>
-//}
+func volumeOfSphere(radius r: Double) -> Double {
+    
+    // Create a variable for the volume.
+    var volume = 0.0
+    
+    // Calculating the volume.
+    volume = (4 * Double.pi * r * r * r) / 3.0
+    
+    // Returning the volume.
+    return volume
+}
 
 
 // MARK: Input
@@ -66,7 +74,7 @@ print("======================================")
 
 // MARK: Process
 
-let outputOfCylinder = volumeOfCylinder(radius: 0, diametre: 5, height: 2)
+let outputOfCylinder = volumeOfCylinder(radius: r, diametre: d, height: h)
 
 // MARK: Output
 

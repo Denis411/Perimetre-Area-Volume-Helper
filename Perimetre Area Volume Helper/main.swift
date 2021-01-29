@@ -72,6 +72,20 @@ func volumeOfSquarePyramid(base b: Double, height h: Double) -> Double {
     // Return the volume.
     return volume
 }
+
+// Volume of a rectangular prism function
+func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double) -> Double {
+    
+    // Variable for volume
+    var volume = 0.0
+    
+    // Calculate volume
+    volume = l * w * h
+    
+    // Return the volume
+    return volume
+}
+
 // MARK: Input
 
 // Labelling the uses of the tool.

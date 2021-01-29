@@ -27,8 +27,28 @@ func areaOfCircle(radius: Double) -> Double {
     return Double.pi * pow(radius, 2.0)
 }
 
-func areaOfCylinder(<#parameters#>) -> <#return type#> {
-    <#function body#>
+// Area of a Cylinder function
+
+/// Finds the area of a cylinder
+/// - Parameters:
+///   - r: Radius: The straight line length from the centre of the circle to the edge.
+///   - d: The straight line length from one edge of the circle to the opposite.  Twice the radius
+///   - h: The height of the cylinder.
+/// - Returns: Volume of a cylinder
+func areaOfCylinder(radius r: Double, diametre d: Double, height h: Double) -> Double {
+
+    // Create variable that holds the volume of the cylinder.
+    var volume = 0.0
+    // Create a variable to hold the value of the diametre (radius * 2)
+    var diametre = 0.0
+    // Check if the user inputted a diamatre or radius.
+    if r != 0.0 {
+        diametre = r * 2
+    } else {
+        diametre = d
+    }
+    volume = diametre * h
+    return volume
 }
 // MARK: Input
 
@@ -42,8 +62,8 @@ let givenWidth: Double = 2  // Set to double using "type annotation" (Telling Sw
 
 // MARK: Process
 
-let area = areaOfRectangle(length: givenLength, width: givenWidth)
+let outputOfCylinder = areaOfCylinder(radius: 0, diametre: 10, height: 2)
 
 // MARK: Output
 
-print("The area is \(area) square units")    // Example of "string interpolation" (Print the contents of a variable)
+print(outputOfCylinder)

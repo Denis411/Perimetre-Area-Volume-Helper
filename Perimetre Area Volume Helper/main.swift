@@ -104,9 +104,36 @@ func volumeOfTrianglePrism(base b: Double, length l: Double, height h: Double) -
 // Labelling the uses of the tool.
 print("This is a volume helper for 3D shapes.")
 print("======================================")
-
-
-
+// Ask and list the shapes they can find the volume of
+print("What shape would you like to find the volume of?")
+print("1: Cylinder")
+print("2: Sphere")
+print("3: Cone")
+print("4: Square-based Pyramid")
+print("5: Rectangular Prism")
+print("6: Triangular Prism")
+// Ask for their input and save it.
+print("What shape would you like? (1 / 2 / 3 / 4 / 5 / 6):")
+let shapeChosen = Int(readLine()!)!
+// Create a variable to return the shape name.
+var shapeName = ""
+// Switch statement to return the shape.
+switch shapeChosen {
+case 1:
+    shapeName = "cylinder"
+case 2:
+    shapeName = "sphere"
+case 3:
+    shapeName = "cone"
+case 4:
+    shapeName = "rectangular prism"
+case 5:
+    shapeName = "triangular prism"
+default:
+    shapeName = "invalid shape"
+    
+}
+// Tell them what shape they chose.
 // MARK: Process
 
 let outputOfCylinder = volumeOfCylinder(radius: r, diametre: d, height: h)

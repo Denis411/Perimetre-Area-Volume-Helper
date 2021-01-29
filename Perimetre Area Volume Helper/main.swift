@@ -11,7 +11,7 @@ import Foundation
 
 // REMEMBER TO ADD SUMMARIES TO FUNCTIONS.
 
-// Area of a Cylinder function
+// Volume of a Cylinder function
 
 /// Finds the area of a cylinder
 /// - Parameters:
@@ -33,6 +33,8 @@ func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) ->
     return volume
 }
 
+// Volume of a sphere function
+
 func volumeOfSphere(radius r: Double) -> Double {
     
     // Create a variable for the volume.
@@ -45,6 +47,7 @@ func volumeOfSphere(radius r: Double) -> Double {
     return volume
 }
 
+// Volume of a cone function
 func volumeOfCone(radius r: Double, height h: Double) -> Double {
     
     // Create a variable to hold the volume.
@@ -57,6 +60,18 @@ func volumeOfCone(radius r: Double, height h: Double) -> Double {
     return volume
 }
 
+// Volume of a square-based pyramid function
+func volumeOfSquarePyramid(base b: Double, height h: Double) -> Double {
+    
+    // Create a variable to hold the volume.
+    var volume = 0.0
+    
+    // Calculate the volume
+    volume = (b * b * h) / 3.0
+    
+    // Return the volume.
+    return volume
+}
 // MARK: Input
 
 // Labelling the uses of the tool.

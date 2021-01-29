@@ -86,6 +86,19 @@ func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double)
     return volume
 }
 
+// Volume of a triangular prism function
+func volumeOfTrianglePrism(base b: Double, length l: Double, height h: Double) -> Double {
+    
+    // Variable for volume
+    var volume = 0.0
+    
+    // Calculate the volume
+    volume = (b * l * h) / 2.0
+    
+    // return the volume
+    return volume
+}
+
 // MARK: Input
 
 // Labelling the uses of the tool.

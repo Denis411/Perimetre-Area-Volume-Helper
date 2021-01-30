@@ -138,54 +138,61 @@ default:
 // Tell them what shape they chose.
 print("You chose a(n) \(shapeName)")
 
+// Creating variables for the different dimensions.
+var r = 0.0
+var d = 0.0
+var h = 0.0
+var b = 0.0
+var l = 0.0
+var w = 0.0
 // Change the parameters that are asked depending on the shape.
 switch shapeChosen {
 case 1: // Cylinder
     // Asking for the dimensions of the shape.
     print("Enter the radius below: (If you have the diameter, type 0.")
     // If statement to see if they inputted the diameter or radius.
-    let r = Int(readLine()!)!
+    r = Double(readLine()!)!
     if r == 0 {
         print("Enter the diameter below:")
-        let d = Int(readLine()!)!
+        d = Double(readLine()!)!
     } else {
     }
     print("Enter the height below:")
-    let h = Int(readLine()!)!
+    h = Double(readLine()!)!
 case 2: // Sphere
     // Asking for the dimensions of the shape.
     print("Enter the radius below:")
     // Get the user input
-    let r = Int(readLine()!)!
+    r = Double(readLine()!)!
 case 3: // Cone
     // Ask for dimensions
     print("Enter the radius below:")
     // User input
-    let r = Int(readLine()!)!
+    r = Double(readLine()!)!
     print("Enter the height below:")
-    let h = Int(readLine()!)!
+    h = Double(readLine()!)!
 case 4: // Square-Based Pyramid
     // Ask for dimensions and get user input
     print("Enter the base below:")
-    let b = Int(readLine()!)!
+    b = Double(readLine()!)!
     print("Enter the height below:")
-    let h  = Int(readLine()!)!
+    h  = Double(readLine()!)!
 case 5: // Rectangular Prism
     // Ask for dimensions and get user input
     print("Enter the length below:")
-    let l = Int(readLine()!)!
+    l = Double(readLine()!)!
     print("Enter the width below:")
-    let w = Int(readLine()!)!
+    w = Double(readLine()!)!
     print("Enter the height below:")
-    let h = Int(readLine()!)!
+    h = Double(readLine()!)!
 case 6: // Triangular Prism
     // Ask for dimensions and get user input
     print("Enter the base below:")
-    let b = Int(readLine()!)!
+    b = Double(readLine()!)!
     print("Enter the length below:")
-    let l = Int(readLine()!)!
+    l = Double(readLine()!)!
     print("Enter the height below:")
-    let h = Int(readLine()!)!
+    h = Double(readLine()!)!
 default:
     print("You have entered an invalid shape.")
 }

@@ -113,8 +113,12 @@ print("4: Square-based Pyramid")
 print("5: Rectangular Prism")
 print("6: Triangular Prism")
 // Ask for their input and save it.
-print("What shape would you like? (1 / 2 / 3 / 4 / 5 / 6):")
+print("What shape would you like to find the volume of? (1 / 2 / 3 / 4 / 5 / 6):")
 let shapeChosen = Int(readLine()!)!
+// Ask for what their units are
+print("What units are the dimensions of the shape in?  (Make sure that they are they are in the same units.")
+print("You can type any units.")
+let units = readLine()!
 // Create a variable to return the shape name.
 var shapeName = ""
 // Switch statement to return the shape.
@@ -221,4 +225,4 @@ default:
 
 // MARK: Output
 
-print("The volume of your chosen shape (\(shapeName)) is: \(output) ")
+print("The volume of your chosen shape (\(shapeName)) is: \(output) \(units)")

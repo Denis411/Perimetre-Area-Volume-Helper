@@ -116,8 +116,8 @@ print("6: Triangular Prism")
 print("What shape would you like to find the volume of? (1 / 2 / 3 / 4 / 5 / 6):")
 let shapeChosen = Int(readLine()!)!
 // Ask for what their units are
-print("What units are the dimensions of the shape in?  (Make sure that they are the same units.)")
-print("You can type any units.")
+print("What units are the dimensions in?  (Make sure they are the same units.)")
+print("You can type any units:", terminator: "")
 let units = readLine()!
 // Create a variable to return the shape name.
 var shapeName = ""

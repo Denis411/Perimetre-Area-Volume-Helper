@@ -23,9 +23,9 @@ func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) ->
 
     // Create variable that holds the volume of the cylinder.
     var volume = 0.0
+    var r = r
     // Check if the user inputted a diamatre or radius.
     if r != 0.0 {
-        r = r
     } else {
         r = d / 2
     }
@@ -134,6 +134,7 @@ default:
     
 }
 // Tell them what shape they chose.
+print("You chose a(n) \(shapeName)")
 // MARK: Process
 
 let outputOfCylinder = volumeOfCylinder(radius: r, diametre: d, height: h)

@@ -126,8 +126,10 @@ case 2:
 case 3:
     shapeName = "cone"
 case 4:
-    shapeName = "rectangular prism"
+    shapeName = "square-based pyramid"
 case 5:
+    shapeName = "rectangular prism"
+case 6:
     shapeName = "triangular prism"
 default:
     shapeName = "invalid shape"
@@ -135,8 +137,66 @@ default:
 }
 // Tell them what shape they chose.
 print("You chose a(n) \(shapeName)")
+
+// Change the parameters that are asked depending on the shape.
+switch shapeChosen {
+case 1: // Cylinder
+    // Asking for the dimensions of the shape.
+    print("Enter the radius below: (If you have the diameter, type 0.")
+    // If statement to see if they inputted the diameter or radius.
+    let r = Int(readLine()!)!
+    if r == 0 {
+        print("Enter the diameter below:")
+        let d = Int(readLine()!)!
+    } else {
+    }
+    print("Enter the height below:")
+    let h = Int(readLine()!)!
+case 2: // Sphere
+    // Asking for the dimensions of the shape.
+    print("Enter the radius below:")
+    // Get the user input
+    let r = Int(readLine()!)!
+case 3: // Cone
+    // Ask for dimensions
+    print("Enter the radius below:")
+    // User input
+    let r = Int(readLine()!)!
+    print("Enter the height below:")
+    let h = Int(readLine()!)!
+case 4: // Square-Based Pyramid
+    // Ask for dimensions and get user input
+    print("Enter the base below:")
+    let b = Int(readLine()!)!
+    print("Enter the height below:")
+    let h  = Int(readLine()!)!
+case 5: // Rectangular Prism
+    // Ask for dimensions and get user input
+    print("Enter the length below:")
+    let l = Int(readLine()!)!
+    print("Enter the width below:")
+    let w = Int(readLine()!)!
+    print("Enter the height below:")
+    let h = Int(readLine()!)!
+case 6: // Triangular Prism
+    // Ask for dimensions and get user input
+    print("Enter the base below:")
+    let b = Int(readLine()!)!
+    print("Enter the length below:")
+    let l = Int(readLine()!)!
+    print("Enter the height below:")
+    let h = Int(readLine()!)!
+default:
+    print("You have entered an invalid shape.")
+}
+
 // MARK: Process
 
+// Switch statement to change the function that is called depending on the shape.
+switch shapeChosen {
+case 1: // Cylinder
+    let output = volumeOfCylinder(radius: r, diametre: d, height: h)
+}
 let outputOfCylinder = volumeOfCylinder(radius: r, diametre: d, height: h)
 
 // MARK: Output

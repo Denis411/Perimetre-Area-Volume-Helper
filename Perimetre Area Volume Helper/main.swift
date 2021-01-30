@@ -100,10 +100,15 @@ func volumeOfTrianglePrism(base b: Double, length l: Double, height h: Double) -
 }
 
 // MARK: Input
-
 // Labelling the uses of the tool.
 print("This is a volume helper for 3D shapes.")
 print("======================================")
+
+// Create a variable to tell us if they want to repeat the program (Below).
+var repeating = "N"
+var repeatingUp = repeating.uppercased()
+
+repeat {
 // Ask and list the shapes they can find the volume of
 print("What shape would you like to find the volume of?")
 print("1: Cylinder")
@@ -117,7 +122,7 @@ print("What shape would you like to find the volume of? (1 / 2 / 3 / 4 / 5 / 6):
 let shapeChosen = Int(readLine()!)!
 // Ask for what their units are
 print("What units are the dimensions in?  (Make sure they are the same units.)")
-print("You can type any units:", terminator: "")
+print("You can type any units:", terminator: " ")
 let units = readLine()!
 // Create a variable to return the shape name.
 var shapeName = ""
@@ -157,45 +162,45 @@ case 1: // Cylinder
     // If statement to see if they inputted the diameter or radius.
     r = Double(readLine()!)!
     if r == 0 {
-        print("Enter the diameter:", terminator: "")
+        print("Enter the diameter:", terminator: " ")
         d = Double(readLine()!)!
     } else {
     }
-    print("Enter the height:", terminator: "")
+    print("Enter the height:", terminator: " ")
     h = Double(readLine()!)!
 case 2: // Sphere
     // Asking for the dimensions of the shape.
-    print("Enter the radius:", terminator: "")
+    print("Enter the radius:", terminator: " ")
     // Get the user input
     r = Double(readLine()!)!
 case 3: // Cone
     // Ask for dimensions
-    print("Enter the radius:", terminator: "")
+    print("Enter the radius:", terminator: " ")
     // User input
     r = Double(readLine()!)!
-    print("Enter the height:", terminator: "")
+    print("Enter the height:", terminator: " ")
     h = Double(readLine()!)!
 case 4: // Square-Based Pyramid
     // Ask for dimensions and get user input
-    print("Enter the base:", terminator: "")
+    print("Enter the base:", terminator: " ")
     b = Double(readLine()!)!
-    print("Enter the height:", terminator: "")
+    print("Enter the height:", terminator: " ")
     h  = Double(readLine()!)!
 case 5: // Rectangular Prism
     // Ask for dimensions and get user input
-    print("Enter the length:", terminator: "")
+    print("Enter the length:", terminator: " ")
     l = Double(readLine()!)!
-    print("Enter the width:", terminator: "")
+    print("Enter the width:", terminator: " ")
     w = Double(readLine()!)!
-    print("Enter the height:", terminator: "")
+    print("Enter the height:", terminator: " ")
     h = Double(readLine()!)!
 case 6: // Triangular Prism
     // Ask for dimensions and get user input
-    print("Enter the base:", terminator: "")
+    print("Enter the base:", terminator: " ")
     b = Double(readLine()!)!
-    print("Enter the length:", terminator: "")
+    print("Enter the length:", terminator: " ")
     l = Double(readLine()!)!
-    print("Enter the height:", terminator: "")
+    print("Enter the height:", terminator: " ")
     h = Double(readLine()!)!
 default:
     print("You have entered an invalid shape.")
@@ -226,3 +231,12 @@ default:
 // MARK: Output
 
 print("The volume of your chosen shape (\(shapeName)) is: \(output) \(units)")
+
+// Ask if they want to continue finding the volume of other shapes.
+    print("Do you want to continue finding the volume of other shapes? (Y / N)")
+    repeating = readLine()!
+    for _ in 1...2 {
+        print("\n")
+    }
+} while repeatingUp != "N"
+print("Thank you, have a nice day.")

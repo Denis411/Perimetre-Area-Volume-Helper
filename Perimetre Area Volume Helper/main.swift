@@ -9,11 +9,8 @@ import Foundation
 
 //MARK: Functions
 
-// REMEMBER TO ADD SUMMARIES TO FUNCTIONS.
-
 // Volume of a Cylinder function
-
-/// Finds the area of a cylinder
+/// Finds the volume of a cylinder.
 /// - Parameters:
 ///   - r: Radius: The straight line length from the centre of the circle to the edge.
 ///   - d: The straight line length from one edge of the circle to the opposite.  Twice the radius
@@ -34,7 +31,9 @@ func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) ->
 }
 
 // Volume of a sphere function
-
+/// Finds the volume of a sphere.
+/// - Parameter r: The radius.  The straight line distance between the middle of the circle and the edge of it.
+/// - Returns: The volume of a sphere.
 func volumeOfSphere(radius r: Double) -> Double {
     
     // Create a variable for the volume.
@@ -48,6 +47,11 @@ func volumeOfSphere(radius r: Double) -> Double {
 }
 
 // Volume of a cone function
+/// Finds the volume of a cone.
+/// - Parameters:
+///   - r: The radius.  The straight line distance from the middle of the circle to the edge.
+///   - h: The height of the cone.  Perpendicular line from the bottom-most par to the top most part of the cone.
+/// - Returns: The volume of a cone.
 func volumeOfCone(radius r: Double, height h: Double) -> Double {
     
     // Create a variable to hold the volume.
@@ -61,6 +65,11 @@ func volumeOfCone(radius r: Double, height h: Double) -> Double {
 }
 
 // Volume of a square-based pyramid function
+/// Finds the volume of a square-based pyramid.
+/// - Parameters:
+///   - b: The length along the bottom of the pyramid.
+///   - h: The height of the pyramid.  Perpendicular line from the bottom-most part to the top-most part of the pyramid.
+/// - Returns: The volume of a square-based pyramid.
 func volumeOfSquarePyramid(base b: Double, height h: Double) -> Double {
     
     // Create a variable to hold the volume.
@@ -74,6 +83,12 @@ func volumeOfSquarePyramid(base b: Double, height h: Double) -> Double {
 }
 
 // Volume of a rectangular prism function
+/// Finds the volume of a rectangular prism.
+/// - Parameters:
+///   - l: The length of the rectanglular prism.
+///   - w: The width of the rectangular prism.
+///   - h: The height of the rectangular prism.
+/// - Returns: The volume of the rectangular prism.
 func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double) -> Double {
     
     // Variable for volume
@@ -87,6 +102,12 @@ func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double)
 }
 
 // Volume of a triangular prism function
+/// Finds the volume of a triangular prism.
+/// - Parameters:
+///   - b: The distance of the base of the prism.
+///   - l: The length of the prism.
+///   - h: The height of the prism.  Perpendicular line from the bottom-most part to the top-most part of the prism.
+/// - Returns: The volume of a triangular prism.
 func volumeOfTrianglePrism(base b: Double, length l: Double, height h: Double) -> Double {
     
     // Variable for volume

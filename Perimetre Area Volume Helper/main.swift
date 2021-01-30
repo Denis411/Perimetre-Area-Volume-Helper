@@ -153,49 +153,49 @@ var w = 0.0
 switch shapeChosen {
 case 1: // Cylinder
     // Asking for the dimensions of the shape.
-    print("Enter the radius below: (If you have the diameter, type 0.")
+    print("Enter the radius: (If you have the diameter, type 0.)", terminator: "")
     // If statement to see if they inputted the diameter or radius.
     r = Double(readLine()!)!
     if r == 0 {
-        print("Enter the diameter below:")
+        print("Enter the diameter:", terminator: "")
         d = Double(readLine()!)!
     } else {
     }
-    print("Enter the height below:")
+    print("Enter the height:", terminator: "")
     h = Double(readLine()!)!
 case 2: // Sphere
     // Asking for the dimensions of the shape.
-    print("Enter the radius below:")
+    print("Enter the radius:", terminator: "")
     // Get the user input
     r = Double(readLine()!)!
 case 3: // Cone
     // Ask for dimensions
-    print("Enter the radius below:")
+    print("Enter the radius:", terminator: "")
     // User input
     r = Double(readLine()!)!
-    print("Enter the height below:")
+    print("Enter the height:", terminator: "")
     h = Double(readLine()!)!
 case 4: // Square-Based Pyramid
     // Ask for dimensions and get user input
-    print("Enter the base below:")
+    print("Enter the base:", terminator: "")
     b = Double(readLine()!)!
-    print("Enter the height below:")
+    print("Enter the height:", terminator: "")
     h  = Double(readLine()!)!
 case 5: // Rectangular Prism
     // Ask for dimensions and get user input
-    print("Enter the length below:")
+    print("Enter the length:", terminator: "")
     l = Double(readLine()!)!
-    print("Enter the width below:")
+    print("Enter the width:", terminator: "")
     w = Double(readLine()!)!
-    print("Enter the height below:")
+    print("Enter the height:", terminator: "")
     h = Double(readLine()!)!
 case 6: // Triangular Prism
     // Ask for dimensions and get user input
-    print("Enter the base below:")
+    print("Enter the base:", terminator: "")
     b = Double(readLine()!)!
-    print("Enter the length below:")
+    print("Enter the length:", terminator: "")
     l = Double(readLine()!)!
-    print("Enter the height below:")
+    print("Enter the height:", terminator: "")
     h = Double(readLine()!)!
 default:
     print("You have entered an invalid shape.")

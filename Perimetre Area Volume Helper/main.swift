@@ -199,13 +199,26 @@ default:
 
 // MARK: Process
 
+// Create a variable to hold the output
+var output = 0.0
 // Switch statement to change the function that is called depending on the shape.
 switch shapeChosen {
 case 1: // Cylinder
-    let output = volumeOfCylinder(radius: r, diametre: d, height: h)
+    output = volumeOfCylinder(radius: r, diametre: d, height: h)
+case 2: // Sphere
+    output = volumeOfSphere(radius: r)
+case 3: // Cone
+    output = volumeOfCone(radius: r, height: h)
+case 4: // Square-Based Pyramid
+    output = volumeOfSquarePyramid(base: b, height: h)
+case 5: // Rectangular Prism
+ output = volumeOfRectanglePrism(length: l, width: w, height: h)
+case 6: // Triangular Prism
+    output = volumeOfTrianglePrism(base: b, length: l, height: h)
+default:
+    break
 }
-let outputOfCylinder = volumeOfCylinder(radius: r, diametre: d, height: h)
 
 // MARK: Output
 
-print(outputOfCylinder)
+print("The volume of your chosen shape (\(shapeName)) is: \(output) ")

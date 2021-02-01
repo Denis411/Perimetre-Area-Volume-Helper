@@ -14,7 +14,7 @@ import Foundation
 /// - Parameters:
 ///   - r: Radius: The straight line length from the centre of the circle to the edge.
 ///   - d: The straight line length from one edge of the circle to the opposite.  Twice the radius
-///   - h: The height of the cylinder.
+///   - h: The height of the cylinder.  Perpendicular line from the bottom-most to the top-most part of the cylinder.
 /// - Returns: Volume of a cylinder
 func volumeOfCylinder(radius r: Double, diametre d: Double, height h: Double) -> Double {
 
@@ -85,9 +85,9 @@ func volumeOfSquarePyramid(base b: Double, height h: Double) -> Double {
 // Volume of a rectangular prism function
 /// Finds the volume of a rectangular prism.
 /// - Parameters:
-///   - l: The length of the rectanglular prism.
-///   - w: The width of the rectangular prism.
-///   - h: The height of the rectangular prism.
+///   - l: The length of the rectanglular prism.   Distance of one side of the prism.
+///   - w: The width of the rectangular prism.  Distance of the other side of the prism.
+///   - h: The height of the rectangular prism.  Perpendicular line from the bottom-most part to the top-most part of the prism.
 /// - Returns: The volume of the rectangular prism.
 func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double) -> Double {
     
@@ -104,8 +104,8 @@ func volumeOfRectanglePrism(length l: Double, width w: Double, height h: Double)
 // Volume of a triangular prism function
 /// Finds the volume of a triangular prism.
 /// - Parameters:
-///   - b: The distance of the base of the prism.
-///   - l: The length of the prism.
+///   - b: The distance of the base of the prism.  Distance of one side length of the prism.
+///   - l: The length of the prism.  Distance of the other side length of the prism.
 ///   - h: The height of the prism.  Perpendicular line from the bottom-most part to the top-most part of the prism.
 /// - Returns: The volume of a triangular prism.
 func volumeOfTrianglePrism(base b: Double, length l: Double, height h: Double) -> Double {

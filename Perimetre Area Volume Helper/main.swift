@@ -139,8 +139,7 @@ print("4: Square-based Pyramid")
 print("5: Rectangular Prism")
 print("6: Triangular Prism")
 // Ask for their input and save it.
-print("What shape would you like to find the volume of? (1 / 2 / 3 / 4 / 5 / 6):")
-let shapeChosen = Int(readLine()!)!
+let shapeChosen = Int.collectInputInt(withPrompt: "What shape would you like to find the volume of? (1 / 2 / 3 / 4 / 5 / 6): \n", minimum: 1, maximum: 6)
 // Ask for what their units are
 print("What units are the dimensions in?  (Make sure they are the same units.)")
 print("You can type any units:", terminator: " ")

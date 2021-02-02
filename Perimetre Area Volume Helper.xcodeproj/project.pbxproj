@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A680426425C46DDE00B72228 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680426325C46DDE00B72228 /* main.swift */; };
+		A6A300BC25C9E4C70024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300BB25C9E4C70024A1B3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A680426025C46DDE00B72228 /* Perimetre Area Volume Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Perimetre Area Volume Helper"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680426325C46DDE00B72228 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A6A300BB25C9E4C70024A1B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +43,10 @@
 		A680425725C46DDE00B72228 = {
 			isa = PBXGroup;
 			children = (
+				A6A300BB25C9E4C70024A1B3 /* Extensions.swift */,
 				A680426225C46DDE00B72228 /* Perimetre Area Volume Helper */,
 				A680426125C46DDE00B72228 /* Products */,
+				A6A300AB25C86C980024A1B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,13 @@
 				A680426325C46DDE00B72228 /* main.swift */,
 			);
 			path = "Perimetre Area Volume Helper";
+			sourceTree = "<group>";
+		};
+		A6A300AB25C86C980024A1B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A680426425C46DDE00B72228 /* main.swift in Sources */,
+				A6A300BC25C9E4C70024A1B3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

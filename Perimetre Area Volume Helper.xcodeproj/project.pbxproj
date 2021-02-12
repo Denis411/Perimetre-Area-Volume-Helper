@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A680426425C46DDE00B72228 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680426325C46DDE00B72228 /* main.swift */; };
 		A6A300BC25C9E4C70024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300BB25C9E4C70024A1B3 /* Extensions.swift */; };
+		A6DB243425D6E96500605AC9 /* iOS_VolumeHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB243325D6E96500605AC9 /* iOS_VolumeHelperApp.swift */; };
+		A6DB243625D6E96500605AC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB243525D6E96500605AC9 /* ContentView.swift */; };
+		A6DB243825D6E96B00605AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DB243725D6E96B00605AC9 /* Assets.xcassets */; };
+		A6DB243B25D6E96B00605AC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DB243A25D6E96B00605AC9 /* Preview Assets.xcassets */; };
+		A6DB244325D6E9AC00605AC9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB244225D6E9AC00605AC9 /* File.swift */; };
+		A6DB244425D6E9AC00605AC9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB244225D6E9AC00605AC9 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +33,24 @@
 		A680426025C46DDE00B72228 /* Perimetre Area Volume Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Perimetre Area Volume Helper"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680426325C46DDE00B72228 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6A300BB25C9E4C70024A1B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6DB243125D6E96500605AC9 /* iOS-VolumeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-VolumeHelper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DB243325D6E96500605AC9 /* iOS_VolumeHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_VolumeHelperApp.swift; sourceTree = "<group>"; };
+		A6DB243525D6E96500605AC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6DB243725D6E96B00605AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6DB243A25D6E96B00605AC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6DB243C25D6E96B00605AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6DB244225D6E9AC00605AC9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A680425D25C46DDE00B72228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB242E25D6E96500605AC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +63,10 @@
 		A680425725C46DDE00B72228 = {
 			isa = PBXGroup;
 			children = (
+				A6DB244225D6E9AC00605AC9 /* File.swift */,
 				A6A300BB25C9E4C70024A1B3 /* Extensions.swift */,
 				A680426225C46DDE00B72228 /* Perimetre Area Volume Helper */,
+				A6DB243225D6E96500605AC9 /* iOS-VolumeHelper */,
 				A680426125C46DDE00B72228 /* Products */,
 				A6A300AB25C86C980024A1B3 /* Frameworks */,
 			);
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A680426025C46DDE00B72228 /* Perimetre Area Volume Helper */,
+				A6DB243125D6E96500605AC9 /* iOS-VolumeHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6DB243225D6E96500605AC9 /* iOS-VolumeHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB243325D6E96500605AC9 /* iOS_VolumeHelperApp.swift */,
+				A6DB243525D6E96500605AC9 /* ContentView.swift */,
+				A6DB243725D6E96B00605AC9 /* Assets.xcassets */,
+				A6DB243C25D6E96B00605AC9 /* Info.plist */,
+				A6DB243925D6E96B00605AC9 /* Preview Content */,
+			);
+			path = "iOS-VolumeHelper";
+			sourceTree = "<group>";
+		};
+		A6DB243925D6E96B00605AC9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB243A25D6E96B00605AC9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +136,23 @@
 			productReference = A680426025C46DDE00B72228 /* Perimetre Area Volume Helper */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6DB243025D6E96500605AC9 /* iOS-VolumeHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DB243F25D6E96B00605AC9 /* Build configuration list for PBXNativeTarget "iOS-VolumeHelper" */;
+			buildPhases = (
+				A6DB242D25D6E96500605AC9 /* Sources */,
+				A6DB242E25D6E96500605AC9 /* Frameworks */,
+				A6DB242F25D6E96500605AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-VolumeHelper";
+			productName = "iOS-VolumeHelper";
+			productReference = A6DB243125D6E96500605AC9 /* iOS-VolumeHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +163,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A680425F25C46DDE00B72228 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A6DB243025D6E96500605AC9 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -121,9 +184,22 @@
 			projectRoot = "";
 			targets = (
 				A680425F25C46DDE00B72228 /* Perimetre Area Volume Helper */,
+				A6DB243025D6E96500605AC9 /* iOS-VolumeHelper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6DB242F25D6E96500605AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB243B25D6E96B00605AC9 /* Preview Assets.xcassets in Resources */,
+				A6DB243825D6E96B00605AC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A680425C25C46DDE00B72228 /* Sources */ = {
@@ -131,7 +207,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A680426425C46DDE00B72228 /* main.swift in Sources */,
+				A6DB244325D6E9AC00605AC9 /* File.swift in Sources */,
 				A6A300BC25C9E4C70024A1B3 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB242D25D6E96500605AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB243625D6E96500605AC9 /* ContentView.swift in Sources */,
+				A6DB244425D6E9AC00605AC9 /* File.swift in Sources */,
+				A6DB243425D6E96500605AC9 /* iOS_VolumeHelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +362,53 @@
 			};
 			name = Release;
 		};
+		A6DB243D25D6E96B00605AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-VolumeHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-VolumeHelper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-VolumeHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6DB243E25D6E96B00605AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-VolumeHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-VolumeHelper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-VolumeHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,6 +426,15 @@
 			buildConfigurations = (
 				A680426825C46DDE00B72228 /* Debug */,
 				A680426925C46DDE00B72228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6DB243F25D6E96B00605AC9 /* Build configuration list for PBXNativeTarget "iOS-VolumeHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB243D25D6E96B00605AC9 /* Debug */,
+				A6DB243E25D6E96B00605AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

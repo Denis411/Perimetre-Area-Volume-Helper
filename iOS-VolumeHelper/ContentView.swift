@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: Stored Properties
+    @State private var fromShape = ShapeList.cylinder
+    @State private var input: String = ""
+    @State private var toShape = ShapeList.cylinder
+    
+    // MARK: Computed Properties
 
     var body: some View {
         Text("Hello, world!")
